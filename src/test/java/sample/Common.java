@@ -4,6 +4,7 @@ import java.io.File;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -24,6 +25,12 @@ public class Common {
 			WebDriver driver = new FirefoxDriver(opt);
 			return driver;
 			//
+		}
+		if (BrowserName == "Chrome"){
+			System.setProperty("webdriver.chrome.driver", "C:\\cd\\chromedriver.exe");
+			WebDriver driver = new ChromeDriver();
+			return driver;
+			
 		}
 		return null;
 	}
