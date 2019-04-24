@@ -12,7 +12,6 @@ public class TasksTests {
 		WebDriver dr = lib.OpenBrowser("FireFox");
 		lib.Login(dr);
 		lib.CreateNewCustomer(dr);
-		// test //.///
 	}
 	
 }
