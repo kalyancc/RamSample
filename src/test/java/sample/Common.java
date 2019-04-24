@@ -23,6 +23,7 @@ public class Common {
 			opt.setBinary(new FirefoxBinary(new File("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe")));
 			WebDriver driver = new FirefoxDriver(opt);
 			return driver;
+			//
 		}
 		return null;
 	}
